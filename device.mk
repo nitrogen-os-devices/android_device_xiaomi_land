@@ -129,7 +129,7 @@ PRODUCT_PACKAGES += \
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
-    
+
 # Consumerir
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl
@@ -175,7 +175,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
-    
+
 PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.0-impl
 
@@ -194,7 +194,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
     android.hardware.gnss@1.0-impl-qti \
     android.hardware.gnss@1.0-service-qti
-    
+
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/gps/etc/apdr.conf:system/vendor/etc/apdr.conf \
@@ -268,7 +268,7 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw  \
     libstagefright_soft_flacdec
-    
+
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-impl
 
@@ -296,7 +296,7 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     power.qcom
-    
+
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl \
     android.hardware.power@1.0-service
@@ -364,7 +364,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/thermal-engine.conf:system/vendor/etc/thermal-engine.conf
-    
+
 # USB HAL
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
@@ -406,7 +406,7 @@ PRODUCT_PACKAGES += \
     wificond \
     wpa_supplicant \
     wpa_supplicant.conf
-    
+
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service
 
@@ -417,3 +417,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     $(DEVICE_PATH)/wifi/WCNSS_qcom_cfg.ini:system/vendor/etc/wifi/WCNSS_qcom_cfg.ini
+
+PRODUCT_PACKAGES += \
+    XiaomiParts
