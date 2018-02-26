@@ -422,3 +422,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     XiaomiParts
+
+# Charger
+include $(LOCAL_PATH)/rootdir/charger/charger.mk
