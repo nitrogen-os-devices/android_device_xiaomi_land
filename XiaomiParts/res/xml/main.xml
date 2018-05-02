@@ -22,4 +22,35 @@
             android:title="@string/vib_strength_title_head"
             android:summary="@string/vib_strength_summary_head" />
     </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/category_screen_color">
+        <org.omnirom.device.KcalRGBRedPreference
+            android:key="rgb_red"
+            android:title="@string/rgb_red" />
+        <org.omnirom.device.KcalRGBGreenPreference
+            android:key="rgb_green"
+            android:title="@string/rgb_green" />
+        <org.omnirom.device.KcalRGBBluePreference
+            android:key="rgb_blue"
+            android:title="@string/rgb_blue" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/category_kcal_extras">
+        <org.omnirom.device.KcalRGBMinPreference
+            android:key="rgb_min"
+            android:title="@string/rgb_min" />
+        <org.omnirom.device.KcalSatIntensityPreference
+            android:key="sat_intensity"
+            android:title="@string/sat_intensity" />
+        <org.omnirom.device.KcalScreenHuePreference
+            android:key="scr_hue"
+            android:title="@string/scr_hue" />
+        <org.omnirom.device.KcalScreenValuePreference
+            android:key="scr_val"
+            android:title="@string/scr_val" />
+        <org.omnirom.device.KcalScreenContrPreference
+            android:key="scr_cont"
+            android:title="@string/scr_cont" />
+    </PreferenceCategory>
+
 </PreferenceScreen>
