@@ -359,10 +359,10 @@ PRODUCT_PACKAGES += \
     Snap
 
 # Thermal
-PRODUCT_PACKAGES += \
-    thermal.msm8937 \
-    android.hardware.thermal@1.0-impl \
-    android.hardware.thermal@1.0-service
+#PRODUCT_PACKAGES += \
+#    thermal.msm8937 \
+#    android.hardware.thermal@1.0-impl \
+#    android.hardware.thermal@1.0-service
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/thermal-engine.conf:system/vendor/etc/thermal-engine.conf
