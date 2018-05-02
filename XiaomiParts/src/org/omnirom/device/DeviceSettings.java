@@ -45,13 +45,8 @@ public class DeviceSettings extends PreferenceActivity implements
         Preference.OnPreferenceChangeListener {
 
     private static final String KEY_CATEGORY_DISPLAY = "display";
-    public static final String KEY_TAPTOWAKE_SWITCH = "taptowake";
     public static final String KEY_VIBSTRENGTH = "vib_strength";
 
-    final String KEY_DEVICE_DOZE = "device_doze";
-    final String KEY_DEVICE_DOZE_PACKAGE_NAME = "org.lineageos.settings.doze";
-
-    private TwoStatePreference mTapToWakeSwitch;
     private VibratorStrengthPreference mVibratorStrength;
 
     @Override
@@ -68,19 +63,9 @@ public class DeviceSettings extends PreferenceActivity implements
         mVibratorStrength = (VibratorStrengthPreference) findPreference(KEY_VIBSTRENGTH);
         if (mVibratorStrength != null) {
             mVibratorStrength.setEnabled(VibratorStrengthPreference.isSupported());
-        }
-
-        mTapToWakeSwitch = (TwoStatePreference) findPreference(KEY_TAPTOWAKE_SWITCH);
-        mTapToWakeSwitch.setEnabled(TapToWakeSwitch.isSupported());
-        mTapToWakeSwitch.setChecked(TapToWakeSwitch.isCurrentlyEnabled(this));
-        mTapToWakeSwitch.setOnPreferenceChangeListener(new TapToWakeSwitch());
-
-        if (!isAppInstalled(KEY_DEVICE_DOZE_PACKAGE_NAME)) {
-            PreferenceCategory displayCategory = (PreferenceCategory) findPreference(KEY_CATEGORY_DISPLAY);
-            displayCategory.removePreference(findPreference(KEY_DEVICE_DOZE));
-        }
-
     }
+
+}
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
